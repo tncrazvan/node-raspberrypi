@@ -1,0 +1,26 @@
+{
+  "name": "node-raspberrypi",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@swc/core": "^1.3.57",
+    "@types/command-line-args": "^5.2.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "vite-plugin-node": "^3.0.2",
+    "@sveltejs/vite-plugin-svelte": "^2.2.0",
+    "vite": "^4.3.5"
+  },
+  "dependencies": {
+    "command-line-args": "^5.2.1"
+  },
+  "scripts": {
+    "prettier": "prettier --write",
+    "build": "vite build",
+    "build:all": "vite build && rollup -c",
+    "start": "vite build && node dist/main.mjs"
+  }
+}

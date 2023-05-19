@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": ".",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "paths": {
+      "@t/*": ["src/lib/@types/*"],
+      "@scripts/*": ["src/lib/@scripts/*"],
+      "@constants": ["src/lib/@constants.js"],
+      "@assets": ["src/lib/@assets.js"]
+    }
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js"]
+}
